@@ -1,0 +1,36 @@
+a{
+	color:#fff;
+	text-decoration: none;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background: #00BFFF;
+	color: #fff;
+	font-family: Arial;
+}
+.header__section{
+	display: flex;
+	align-items: left;
+}
+.header__item{
+	padding: 10px 15px;
+	font-size: 20px;
+	margin-left: 5px;
+
+}
+.header__item:hover{
+	background-color: #DC143C;
+	border-radius: 4px;
+}
+#header {
+	background: #00BFFF;
+	height: 200px;
+	margin-bottom: 10px;
+}
+#content{
+	background: #00BFFF;
+	min-height: 500px;
+
+}
