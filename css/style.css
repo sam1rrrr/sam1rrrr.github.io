@@ -1,47 +1,42 @@
-a{
-	color:#fff;
-	text-decoration: none;
-}
-.header{
-	display: flex;
-	justify-content: space-between;
-	padding: 10px;
-	background: #00BFFF;
-	color: #fff;
-	font-family: Uni Sans;
-}
-.header__section{
-	display: flex;
-	align-items: center;
-}
-.header__item{
-	padding: 10px 15px;
-	font-size: 20px;
-	margin-left: 5px;
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
 
 }
-.header__item:hover{
-	background-color: #DC143C;
-	border-radius: 4px;
+
+.header {
+    position: absolute top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: black;
 }
-@font-face {
-    font-family: 'Uni Sans';
-    src: local('Uni Sans Thin Caps'), local('UniSansThinCaps'), url('unisansthincaps.woff2') format('woff2'), url('unisansthincaps.woff') format('woff'), url('unisansthincaps.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+
+h1 {
+    font-size: 60px;
 }
-@font-face {
-    font-family: 'Uni Sans';
-    src: local('Uni Sans Thin Caps Italic'), local('UniSansThinCapsItalic'), url('unisansthincapsitalic.woff2') format('woff2'), url('unisansthincapsitalic.woff') format('woff'), url('unisansthincapsitalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
+p{
+    font-size: 30px;
 }
-@font-face {
-    font-family: 'Uni Sans';
-    src: local('Uni Sans Heavy Caps'), local('UniSansHeavyCaps'), url('unisansheavycaps.woff2') format('woff2'), url('unisansheavycaps.woff') format('woff'), url('unisansheavycaps.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+
 }
-@font-face {
-    font-family: 'Uni Sans';
-    src: local('Uni Sans Heavy Caps Italic'), local('UniSansHeavyCapsItal
+.header__logo {
+    font-size: 100px;
+    font-weight: 700;
+    color: black;
+}
+nav {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.nav__link {
+    color: black;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+.nav__link:hover {
+    color: #fce38a;
+}
