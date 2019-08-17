@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -15,3 +16,22 @@ a{
     margin: 25px 25px;
  font-weight: 700;
 }
+=======
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #BF55EC;
+}
+h1{
+ font-weight: 700;
+    margin: 25px 25px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: linear-gradient(to right, #FF00FF, #A52A2A);
+    font-size: 40px;
+    margin: 25px 25px;
+ font-weight: 700;
+}
+>>>>>>> 783dbf323df921960f85ce0d5ab1f2a49363ad97
