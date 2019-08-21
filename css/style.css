@@ -28,18 +28,18 @@ body {
 .logo {
     font-size: 45px;
     color: white;
-    margin: 53px;
+    margin: 30px;
     font-weight: 700;
 
 }
 
 .nadpis {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     color: #fff;
     text-align: start;
     margin-bottom: -80px;
-    margin-left: -1165px;
+    margin-left: -1125px;
 }
 
 .header__inner {
@@ -51,10 +51,10 @@ body {
 .nav__link {
     text-decoration: none;
     color: white;
-    transition: color .2s linear;
+    transition: color .3s linear;
     vertical-align: top;
     margin: 0 15px;
-    font-size: 14px;
+    font-size: 16px;
 
 
 }
