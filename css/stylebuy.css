@@ -68,18 +68,7 @@ body {
 .nav__link:hover {
     color: yellow;
 }
-.h1{
-    font-size: 60px;
-}
-h2{
-    color: red;
-    margin: 30px 15px;
-    font-size: 50px;
-}
-h3{
-    margin: 30px 15px;
-    font-size: 40px;
-}
+
 .about{
     display: flex;
     justify-content: space-between;
@@ -94,4 +83,14 @@ img{
 h1{
     margin: 0 15px;
     margin-top: 200px;
+}
+.a{
+       text-decoration: none;
+    color: white;
+    transition: color .3s linear;
+    vertical-align: top;
+    margin: 15px 15px;
+    font-size: 16px;
+    color: white;
+
 }
