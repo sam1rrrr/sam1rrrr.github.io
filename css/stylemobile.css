@@ -29,7 +29,7 @@ body {
 .logo {
     font-size: 45px;
     color: white;
-    margin: 30px;
+    margin: 10px 100px;
     font-weight: 700;
 
 }
@@ -40,7 +40,7 @@ body {
     color: #fff;
     text-align: start;
     margin-bottom: -80px;
-    margin-left: -1160px;
+    margin-left: -425px;
 }
 
 .header__inner {
@@ -56,7 +56,7 @@ body {
     vertical-align: top;
     margin: 0 15px;
     font-size: 16px;
-
+margin-left: 10px;
 
 }
 
@@ -68,7 +68,18 @@ body {
 .nav__link:hover {
     color: yellow;
 }
-
+.h1{
+    font-size: 60px;
+}
+h2{
+    color: red;
+    margin: 30px 15px;
+    font-size: 50px;
+}
+h3{
+    margin: 30px 15px;
+    font-size: 40px;
+}
 .about{
     display: flex;
     justify-content: space-between;
@@ -84,13 +95,8 @@ h1{
     margin: 0 15px;
     margin-top: 200px;
 }
-.a{
-       text-decoration: none;
-    color: white;
-    transition: color .3s linear;
-    vertical-align: top;
-    margin: 15px 15px;
-    font-size: 16px;
-    color: white;
-
+p{
+    font-size: 30px;
+    margin: 20px;
+    font-weight: 500;
 }

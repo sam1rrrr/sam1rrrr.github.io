@@ -40,7 +40,7 @@ body {
     color: #fff;
     text-align: start;
     margin-bottom: -80px;
-    margin-left: -920px;
+    margin-left: -425px;
 }
 
 .header__inner {
@@ -100,16 +100,4 @@ p{
     margin: 20px;
     font-weight: 500;
 }
-a{
-    text-decoration: none;
-    color:white;
-    font-size: 50px;
-margin: 20px;
- transition: color .3s linear;
-    vertical-align: top;
 
-
-}
-a:hover{
-    color: yellow;
-}
