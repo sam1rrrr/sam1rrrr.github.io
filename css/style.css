@@ -1,8 +1,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
-    color: white;
+    background-color: #BF55EC;
 }
 
 .container {
@@ -29,18 +28,22 @@ body {
 .logo {
     font-size: 45px;
     color: white;
-    margin: 10px 100px;
+    margin: 30px;
     font-weight: 700;
 
 }
-
+#header{
+    display: flex;
+    color: aqua;
+    background-color: cornflowerblue;
+}
 .nadpis {
     font-size: 13px;
     font-weight: 700;
     color: #fff;
     text-align: start;
     margin-bottom: -80px;
-    margin-left: -920px;
+    margin-left: -1345px;
 }
 
 .header__inner {
@@ -56,7 +59,7 @@ body {
     vertical-align: top;
     margin: 0 15px;
     font-size: 16px;
-margin-left: 10px;
+
 
 }
 
@@ -68,17 +71,10 @@ margin-left: 10px;
 .nav__link:hover {
     color: yellow;
 }
-.h1{
-    font-size: 60px;
-}
-h2{
-    color: red;
-    margin: 30px 15px;
-    font-size: 50px;
-}
-h3{
-    margin: 30px 15px;
-    font-size: 40px;
+h1{
+    color: white;
+    font-size: 54px;
+    font-weight: 700;
 }
 .about{
     display: flex;
@@ -95,8 +91,6 @@ h1{
     margin: 0 15px;
     margin-top: 200px;
 }
-p{
-    font-size: 30px;
+.img{
     margin: 20px;
-    font-weight: 500;
 }
