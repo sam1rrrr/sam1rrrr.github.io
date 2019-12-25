@@ -3,7 +3,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #BF55EC;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .container {
     width: 100%;
     max-width: 1170px;
@@ -42,8 +44,8 @@ body {
     font-weight: 700;
     color: #fff;
     text-align: start;
-    margin-bottom: -80px;
-    margin-left: -1345px;
+
+
 }
 
 .header__inner {
@@ -51,14 +53,18 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
+nav{
+    margin-left: 600px;
+    margin-top: -40px
+}
 .nav__link {
     text-decoration: none;
     color: white;
     transition: color .3s linear;
     vertical-align: top;
-    margin: 0 15px;
     font-size: 16px;
+    margin-left: 50px;
+
 
 
 }
@@ -94,3 +100,14 @@ h1{
 .img{
     margin: 20px;
 }
+.congratz{
+    text-align: center;
+    font-size: 100px;
+}
+
+
+img{
+            z-index: 9999;
+            margin-left: 33px;
+            margin-top: 16px
+        }
