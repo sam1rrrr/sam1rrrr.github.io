@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="game.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-<script src="game.js"></script>
-    <title>NEDOSYTE</title>
-    <style>html, body {color: white; font-family: 'Montserrat', sans-serif; padding: 0;margin: 0;}
-* {box-sizing: border-box;}
-        body {background: #ddd; background-color: #BF55EC; padding: 50px; }
+    <meta charset="UTF-8">
+    <title>Nedosite</title>
+</head>
+
+<body>
+<header>
+
+
+
+
+    </header>
+    <div class="intro">
+        <div class="container">
+
+
+        </div> </div>
+        <div id="game">
+        <canvas id="mc" width="1280" height="720"><img src="img/christmas-hat.png" alt=""></canvas>
+        <style>
+            html{
+                box-sizing:border box;}
+            .logo{
+                margin-left: -100px;
+            }
 canvas {
   background: black;
   margin: 0 auto;
   display: block;
-}
-    </style>
-</head>
-<body>
+    margin-top: -730px;
 
-</body>
-<h1>ИГРА РАБОТАЕТ ТОЛЬКО НА ПК</h1>
-<canvas id="mc" width="1280" height="720"></canvas>
+}
+            img{
+width: 50px;
+                margin-left: -100px;
+                margin-top: 0px
+            }
+            </style>
+
+        </div>
 <script>window.onload = function() {
   document.addEventListener('keydown', changeDirection);
   setInterval(loop, 1000/60); // 60 FPS
@@ -228,4 +250,12 @@ function changeDirection(evt)
   cooldown = true;
   setTimeout(function() {cooldown = false;}, 100);
 }</script>
+
+
+
+
+
+
+</body>
+
 </html>
