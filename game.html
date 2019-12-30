@@ -247,11 +247,23 @@ function changeDirection(evt)
   if( evt.keyCode == 40 && !(yv < 0) ) // down arrow
     {xv = 0; yv = speed;}
 
+
+
   cooldown = true;
   setTimeout(function() {cooldown = false;}, 100);
 }</script>
-
-
+<style>
+    input{
+        display: none;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+        input{
+            display: block;
+            border-radius: 30px;
+            border: 4px solid black;
+        }
+    </style>
+<input type="text">
 
 
 
