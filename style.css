@@ -198,7 +198,7 @@ label{
     transition: .5s all;
 }
 
-a{
+.burger_a{
     display: block;
     width: 100%;
     padding: 10px;
@@ -208,8 +208,8 @@ a{
     background-color: #BF55EC;
 }
 
-a:hover{
-    background-color: rgba(0,0,0,.9);
+.burger_a:hover{
+    background-color: white;
 }
 
 #check-menu:checked ~ .main-menu{
