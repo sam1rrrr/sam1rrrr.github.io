@@ -130,6 +130,9 @@ margin-left: 25%;
         display: flex;
         justify-content: center
     }
+    .wrapper{
+        display:block;
+    }
 }
 /* BURGER MENU */
 *{
@@ -148,7 +151,8 @@ margin-left: 25%;
     height: 40px;
     font-family: 'Arial';
 margin-left: 750px;
-    margin-top: -130px
+    margin-top: -130px;
+    display: none;
 }
 
 #check-menu{
