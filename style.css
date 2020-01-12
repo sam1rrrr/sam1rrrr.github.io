@@ -18,9 +18,7 @@ html{
 
     background-size: cover;
 }
-.wrapper{
-    display:none;
-}
+
 .header {
     position: absolute;
     top: 0;
@@ -113,32 +111,6 @@ img{
             margin-left: 33px;
             margin-top: 16px
         }
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .wrapper{
-        display:block;
-    }
-    nav{
-        display: none;
-    }
-    .logo{
-        font-size: 90px;
-margin-left: 25%;
-        text-align: center;
-
-    }
-    .nadpis{
-      font-size: 30px;
-        text-align: center
-    }
-    footer{
-        display: flex;
-        justify-content: center
-    }
-    .wrapper{
-        display:block;
-    }
-}
 /* BURGER MENU */
 *{
     padding: 0;
@@ -240,6 +212,32 @@ label{
 
 #check-menu:checked ~ .fourth{
     display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .wrapper{
+        display:block;
+    }
+    nav{
+        display: none;
+    }
+    .logo{
+        font-size: 90px;
+margin-left: 25%;
+        text-align: center;
+
+    }
+    .nadpis{
+      font-size: 30px;
+        text-align: center
+    }
+    footer{
+        display: flex;
+        justify-content: center
+    }
+    .wrapper{
+        display:block;
+    }
 }
 
 
