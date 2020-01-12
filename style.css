@@ -214,7 +214,7 @@ label{
     display: none;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1277px) and (orientation: portrait) {
     .wrapper{
         display:block;
     }
