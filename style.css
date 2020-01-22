@@ -1,3 +1,9 @@
+span::selection {
+   background: transparent;
+}
+span::-moz-selection {
+   background: transparent;
+}
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -213,7 +219,9 @@ label{
 #check-menu:checked ~ .fourth{
     display: none;
 }
-
+#burger_menu{
+    display: none
+}
 @media (min-width: 768px) and (max-width: 1277px) and (orientation: portrait) {
     .wrapper{
         display:block;
@@ -238,6 +246,7 @@ margin-left: 25%;
     .wrapper{
         display:block;
     }
+
 }
 
 
