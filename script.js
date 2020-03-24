@@ -13,12 +13,12 @@ const COMMANDS = {
   icheater12 : 'Вы успешно вошли в систему!',
   game : 'Запуск игры ...',
   draw : 'Запуск рисовалки ...',
+  
   barsik : 'Запуск барсика ...',
   updates : '<span class="code">Обновления (24.03.2020):</span> <br>   Змейка : <br>- добавлен полноэкранный режим<br>- теперь длина змейки при запуске игры намного меньше<br>Рисовалка : <br>- на английскую "c" рисунок теперь стирается'
 };
 
 let userInput, terminalOutput;
-
 const app = () => {
   userInput = document.getElementById("userInput");
   terminalOutput = document.getElementById("terminalOutput");
@@ -34,8 +34,12 @@ const execute = function executeCommand(input) {
   }
   output = `<div class="terminal-line"><span class="success">➜</span> <span class="directory">~</span> ${input}</div>`;
   if (!COMMANDS.hasOwnProperty(input)) {
+    if (input == 'game -r'){
+      output += '<div class="terminal-line">Запуск игры с рандомными цветами ...</div>'
+    }
+    else{
     output += `<div class="terminal-line">Нет такой команды : ${input}</div>`;
-    console.log("Такой команды нет!");
+    console.log("Такой команды нет!");}
   } else {
     output += COMMANDS[input];
   }
@@ -43,13 +47,16 @@ const execute = function executeCommand(input) {
     location.href=location.href;
   }
   if(input == 'game'){
-    document.location.href = "./game.html";
+    setTimeout(() => { document.location.href = "./game.html";}, 3000);
+  }
+  if(input == 'game -r'){
+    setTimeout(() => { document.location.href = "./gаme.html";}, 3000);
   }
   if(input == 'barsik'){
-    document.location.href = "./barsik.html";
+    setTimeout(() => { document.location.href = "./barsik.html";}, 3000);
   }
   if(input == 'draw'){
-    document.location.href = "./draw.html";
+    setTimeout(() => { document.location.href = "./draw.html";}, 3000);
   }
   terminalOutput.innerHTML = `${
     terminalOutput.innerHTML
