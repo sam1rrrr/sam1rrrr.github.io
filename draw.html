@@ -3,7 +3,7 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <title>Draw</title>
-
+    <link rel="shortcut icon" href="img/favicon.ico">
     <script src="./draw_files/browser.min.js.Без названия"></script>
 
     <style>
@@ -26,7 +26,7 @@
     </style>
 </head>
 <body>
-    <canvas id="canv" style="display: block;" width="0" height="0">Ваш браузер устарел, обновитесь.</canvas>
+    <canvas id="canv" style="display: block;" width="0" height="0"></canvas>
 <button onclick="saveCanvasAsImageFile()" class="download-button">
 Скачать рисунок
 </button>
@@ -319,7 +319,7 @@ function saveCanvasAsImageFile(){
                 d.clear();
             }
 
-            if( e.key.toLowerCase() == 'v' )
+            if( e.key.toLowerCase() == '' )
             {
                 vector = d.calculate(true);
 
@@ -339,7 +339,7 @@ function saveCanvasAsImageFile(){
                 }
             }
 
-            if( e.key.toLowerCase() == 'b' )
+            if( e.key.toLowerCase() == '' )
             {
                 net = new brain.NeuralNetwork();
                 net.train(train_data, {log: true});

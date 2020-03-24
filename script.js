@@ -1,7 +1,7 @@
 const BLACKLISTED_KEY_CODES = [ 38 ];
 const COMMANDS = {
   help:
-    'Команды : <span class="code">about</span>, <span class="code">contact</span>, <span class="code">game</span>, <span class="code">draw</span>, <span class="code">barsik</span>, <span class="code">clear</span>' ,
+    'Команды : <span class="code">about</span>, <span class="code">contact</span>, <span class="code">updates</span>, <span class="code">game</span>, <span class="code">draw</span>, <span class="code">barsik</span>, <span class="code">clear</span>' ,
   about:
     "Copyright © Nedosite 2019-2020",
   
@@ -12,8 +12,9 @@ const COMMANDS = {
   clear : '',
   icheater12 : 'Вы успешно вошли в систему!',
   game : 'Запуск игры ...',
-  draw : '',
-  barsik : ''
+  draw : 'Запуск рисовалки ...',
+  barsik : 'Запуск барсика ...',
+  updates : '<span class="code">Обновления (24.03.2020):</span> <br>   Змейка : <br>- добавлен полноэкранный режим<br>- теперь длина змейки при запуске игры намного меньше<br>Рисовалка : <br>- на английскую "c" рисунок теперь стирается'
 };
 
 let userInput, terminalOutput;
