@@ -15,7 +15,7 @@ const COMMANDS = {
   draw : 'Запуск рисовалки ...',
   
   barsik : 'Запуск барсика ...',
-  updates : '<span class="code">Обновления (24.03.2020):</span> <br>   Змейка : <br>- добавлен полноэкранный режим<br>- теперь длина змейки при запуске игры намного меньше<br>- добавлен режим с рандомными цветами (<span class="code">game -r</span>)<br>Рисовалка : <br>- на английскую "c" рисунок теперь стирается'
+  updates : '<span class="code">Обновления (24.03.2020):</span> <br>   Змейка : <br>- добавлен полноэкранный режим<br>- теперь длина змейки при запуске игры намного меньше<br>- добавлен режим с рандомными цветами (<span class="code">game -r</span>)<br>Рисовалка : <br>- на английскую "c" рисунок теперь стирается<br><span class="code">Обновления (25.03.2020):</span><br>Рисовалка :<br>- пофикшен баг, из-за которого рисунок не стирался на русской раскладке клавиатуры'
 };
 
 let userInput, terminalOutput;
@@ -47,16 +47,16 @@ const execute = function executeCommand(input) {
     location.href=location.href;
   }
   if(input == 'game'){
-    setTimeout(() => { document.location.href = "./game.html";}, 3000);
+    setTimeout(() => { document.location.href = "./game.html";}, 1000);
   }
   if(input == 'game -r'){
-    setTimeout(() => { document.location.href = "./gаme.html";}, 3000);
+    setTimeout(() => { document.location.href = "./gаme.html";}, 1000);
   }
   if(input == 'barsik'){
-    setTimeout(() => { document.location.href = "./barsik.html";}, 3000);
+    setTimeout(() => { document.location.href = "./barsik.html";}, 1000);
   }
   if(input == 'draw'){
-    setTimeout(() => { document.location.href = "./draw.html";}, 3000);
+    setTimeout(() => { document.location.href = "./draw.html";}, 1000);
   }
   terminalOutput.innerHTML = `${
     terminalOutput.innerHTML
