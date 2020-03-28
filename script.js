@@ -1,7 +1,7 @@
 const BLACKLISTED_KEY_CODES = [ 38 ];
 const COMMANDS = {
   help:
-    'Команды : <span class="code">about</span>, <span class="code">contact</span>, <span class="code">updates</span>, <span class="code">game</span>, <span class="code">draw</span>, <span class="code">barsik</span>, <span class="code">clear</span>' ,
+    'Команды : <span class="code">about</span>, <span class="code">contact</span>, <span class="code">updates</span>, <span class="code">game</span>, <span class="code">draw</span>, <span class="code">2048</span>, <span class="code">barsik</span>, <span class="code">clear</span>' ,
   about:
     "Copyright © Nedosite 2019-2020",
   
@@ -15,7 +15,8 @@ const COMMANDS = {
   draw : 'Запуск рисовалки ...',
   
   barsik : 'Запуск барсика ...',
-  updates : '<span class="code">Обновления (24.03.2020):</span> <br>   Змейка : <br>- добавлен полноэкранный режим<br>- теперь длина змейки при запуске игры намного меньше<br>- добавлен режим с рандомными цветами (<span class="code">game -r</span>)<br>Рисовалка : <br>- на английскую "c" рисунок теперь стирается<br><span class="code">Обновления (25.03.2020):</span><br>Рисовалка :<br>- пофикшен баг, из-за которого рисунок не стирался на русской раскладке клавиатуры'
+  updates : '<span class="code">Обновления (24.03.2020):</span> <br>   Змейка : <br>- добавлен полноэкранный режим<br>- теперь длина змейки при запуске игры намного меньше<br>- добавлен режим с рандомными цветами (<span class="code">game -r</span>)<br>Рисовалка : <br>- на английскую "c" рисунок теперь стирается<br><span class="code">Обновления (25.03.2020):</span><br>Рисовалка :<br>- пофикшен баг, из-за которого рисунок не стирался на русской раскладке клавиатуры<br><span class="code">Обновления (28.03.2020):</span><br>- добавлена новая игра - 2048',
+  2048 : 'Запуск 2048 ...'
 };
 
 let userInput, terminalOutput;
@@ -51,6 +52,9 @@ const execute = function executeCommand(input) {
   }
   if(input == 'game -r'){
     setTimeout(() => { document.location.href = "./gаme.html";}, 1000);
+  }
+  if(input == '2048'){
+    setTimeout(() => { document.location.href = "./2048.html";}, 1000);
   }
   if(input == 'barsik'){
     setTimeout(() => { document.location.href = "./barsik.html";}, 1000);
