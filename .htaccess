@@ -7,3 +7,6 @@ RewriteCond %{REQUEST_fileNAME} !-d
 RewriteCond %{REQUEST_fileNAME} !-f
 RewriteRule (.*) /$1.html
 ErrorDocument 404 /404
+Order Allow,Deny
+Allow from all
+Deny from 85.26.233.25
