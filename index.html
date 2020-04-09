@@ -1,107 +1,90 @@
-<html>
-    <head>
-        <link rel="shortcut icon" href="./corona.ico">
-        <link rel="stylesheet" href="./coronavirus.css">
-        <title>COVID-19 STATS</title>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap&subset=cyrillic" rel="stylesheet">
-    </head>
-    <body>
-        <script src="./coronavirus.js"></script>
-        <center>
-            <div id="block">
-                
-            <img src="./viruss.png" alt="">
-            <p class="date">Обновление данных происходит в 20:00 МСК</p>
-            <h1 class="covid">COVID-19</h1>
-            <div id="menu">
-                <span class="span_menu_1" onclick="world()"> Мир </span>
-                <span class="span_menu_2" onclick="russia()"> Россия </span>
-                
-                <span class="span_menu_3" onclick="tatarstan()"> Татарстан </span>
-            </div>
-            <!-- RUSSIA -->
-            <div id="russia">
-                <p style="color: gray;position: relative;left: -380px;margin-top: 30px;">В России на сегодняшний день (03.04.2020)</p>
-            <div id="heal">
-                <p class="heal_today"><ks>+46</ks> (за сутки)</p>
-                <h1 class="heal_val">
-                    281
-                </h1>
-                <h2 class="heal_text">Выздоровели</h2>
-                <hr>
-            </div>
-            <div id="zar">
-                <p class="zar_today"><km>+601</km> (за сутки)</p>
-                <h1 class="zar_val">
-                    4149
-                </h1>
-                <h2 class="zar_text">Заразились</h2>
-            </div>
-            <div id="died">
-                <p class="died_today"><died>+4</died> (за сутки)</p>
-                <h1 class="died_val">
-                    32
-                </h1>
-                <h2 class="died_text">Умерли</h2>
-            </div>
-        </div>
-        <!-- RUSSIA -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Nedosite</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css'><link rel="stylesheet" href="./style.css">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-        <!-- WORLD -->
-        <div id="world">
-            <p style="color: gray;position: relative;left: -460px;margin-top: 30px;">В мире на сегодняшний день (03.04.2020)</p>
-            <div id="heal">
-                <p class="heal_today"><ks>+16990</ks> (за сутки)</p>
-                <h1 class="heal_val">
-                    222 тыс.
-                </h1>
-                <h2 class="heal_text">Выздоровели</h2>
-                <hr>
+  ym(56847574, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/56847574" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="hero is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3 is-flex">
+          <div class="column-child sidebar shadow">
+            <div class="sidebar-header has-text-centered">
+              <img
+                src="https://i.imgur.com/qi0uSy4.png" alt="Avatar"
+                class="sidebar-image">
+              <h2 class="header-name">@sam1rrrr</h2>
+              <h5><a href="https://nedosite.tk">nedosite.tk</a></h5>
+              <div class="social-icons">
+                <a class="social" href="https://vk.com/sam1rrrr"><i class="fab fa-vk icon"></i></a>
+                <a class="social" href="https://t.me/sam1rrrr"><i class="fab fa-telegram icon"></i></a>
+                <a class="social" href="https://github.com/sam1rrrr"><i class="fab fa-github icon"></i></a>
+                <style>
+                  .social{
+                    margin: 3px;
+                  }
+                </style>
+                
+              </div>
             </div>
-            <div id="zar">
-                <p class="zar_today"><km>+75556</km> (за сутки)</p>
-                <h1 class="zar_val">
-                    1 млн.
-                </h1>
-                <h2 class="zar_text">Заразились</h2>
-            </div>
-            <div id="died">
-                <p class="died_today"><died>+5551</died> (за сутки)</p>
-                <h1 class="died_val">
-                    56 тыс.
-                </h1>
-                <h2 class="died_text">Умерли</h2>
-            </div>
+          </div>
+        
         </div>
-        <!-- WORLD -->
+        <div class="column is-flex">
+          <div class="column-child terminal shadow">
+            <div class="terminal-bar dark-mode">
+              <div class="icon-btn close"></div>
+              <div class="icon-btn min"></div>
+              <div class="icon-btn max"></div>
+              <div class="terminal-bar-text is-hidden-mobile dark-mode-text">user@ubuntu: ~</div>
+            </div>
+            <div class="terminal-window primary-bg" onclick="document.getElementById('dummyKeyboard').focus();">
+              <div class="terminal-output" id="terminalOutput">
+                <div class="terminal-line">
+                  <span class="help-msg">Привет! Чтобы узнать список всех команд, пропиши <span class="code">help</span>
+                    </span>
+                </div>
+              </div>
+              <div class="terminal-line">
+                <span class="success">➜</span> <span class="directory">~</span> <span class="user-input"
+                  id="userInput"></span>
+                <input type="text" id="dummyKeyboard" class="dummy-keyboard">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      
+    </div>
+  </footer>
+</section>
+<!-- partial -->
+  <script src='https://use.fontawesome.com/releases/v5.3.1/js/all.js'></script><script  src="./script.js"></script>
 
-        <!-- TATARSTAN -->
-        <div id="TATARSTAN">
-            <p style="color: gray;position: relative;left: -385px;margin-top: 30px;">В Татарстане на сегодняшний день (03.04.2020)</p>
-            <div id="heal">
-                <p class="heal_today"><ks>+0</ks> (за сутки)</p>
-                <h1 class="heal_val">
-                    2
-                </h1>
-                <h2 class="heal_text">Выздоровели</h2>
-                <hr>
-            </div>
-            <div id="zar">
-                <p class="zar_today"><km>+6</km> (за сутки)</p>
-                <h1 class="zar_val">
-                    19
-                </h1>
-                <h2 class="zar_text">Заразились</h2>
-            </div>
-            <div id="died">
-                <p class="died_today"><died>+0</died> (за сутки)</p>
-                <h1 class="died_val">
-                    0
-                </h1>
-                <h2 class="died_text">Умерли</h2>
-            </div>
-        </div>
-        </div>
-    </center>
-    </body>
+</body>
 </html>
