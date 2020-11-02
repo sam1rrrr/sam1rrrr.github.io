@@ -9,5 +9,5 @@ RewriteRule (.*) /$1.html
 ErrorDocument 404 /404
 Order Allow,Deny
 Allow from all
-Deny from 85.26.233.25
+Deny from 95.78.52.43
 Redirect301/ http://example.com/index.html
